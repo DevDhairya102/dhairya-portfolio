@@ -1,0 +1,22 @@
+.pgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border-radius: 20px; overflow: hidden; }
+.pc { background: var(--bg); padding: 1.75rem; transition: all .25s; position: relative; overflow: hidden; }
+.pc::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg,var(--taupe),var(--td),var(--taupe)); transform: scaleX(0); transition: transform .3s; transform-origin: left; }
+.pc:hover { background: var(--butter); }
+.pc:hover::after { transform: scaleX(1); }
+.pctop { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+.pcn { font-size: 11px; font-weight: 700; color: var(--taupe); font-family: 'Courier New',monospace; }
+.pbdg { font-size: 10px; font-weight: 600; padding: 3px 10px; border-radius: 100px; background: var(--cream); color: var(--inkmu); border: 1px solid var(--line); }
+.pbdg.nw { background: linear-gradient(135deg,var(--taupe),var(--td)); color: #fff; border: none; animation: gring 2.5s ease-in-out infinite; }
+.pct { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: .5rem; line-height: 1.3; }
+.pcm { font-size: 11px; font-weight: 600; color: var(--td); background: var(--cream); border: 1px solid var(--line); border-radius: 8px; padding: 5px 11px; margin-bottom: .85rem; display: inline-block; }
+.pcd { font-size: 13px; color: var(--inkmu); line-height: 1.65; }
+.ptags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: .8rem; }
+.pt { font-size: 11px; padding: 3px 9px; border-radius: 4px; background: var(--cream); color: var(--inkm); font-weight: 500; }
+.pcl { font-size: 12px; font-weight: 700; color: var(--td); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: .9rem; transition: all .22s; }
+.pcl:hover { color: var(--tdeep); gap: 9px; }
+.pcl svg { width: 12px; height: 12px; }
+.pce { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px; background: var(--cream); gap: 8px; cursor: default; }
+.pce-p { font-size: 40px; font-weight: 200; color: var(--taupe); line-height: 1; }
+.pce-t { font-size: 12px; color: var(--inkmu); text-align: center; line-height: 1.55; }
+
+@media(max-width:900px) { .pgrid { grid-template-columns: 1fr; } }

@@ -1,0 +1,21 @@
+.ctop { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 12px; }
+.ccard { background: var(--cream); border: 1px solid var(--line); border-radius: 16px; padding: 1.4rem; transition: all .28s; cursor: default; }
+.ccard:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(182,174,159,.3); border-color: var(--taupe); }
+.cci { font-size: 26px; margin-bottom: 10px; }
+.cct { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.ccs { font-size: 12px; color: var(--inkmu); line-height: 1.45; }
+
+.cfeat { background: var(--cream); border: 1.5px solid var(--taupe); border-radius: 20px; padding: 2rem 2.25rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; animation: gring 3s ease-in-out infinite; }
+.cfb { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; color: var(--td); margin-bottom: 7px; }
+.cfti { font-size: 24px; font-weight: 800; color: var(--ink); margin-bottom: 4px; letter-spacing: -.6px; }
+.cfo { font-size: 13px; font-weight: 700; color: var(--td); margin-bottom: 6px; }
+.cfd { font-size: 12px; color: var(--inkmu); margin-bottom: 12px; }
+.cfd2 { font-size: 13px; color: var(--inkm); line-height: 1.68; margin-bottom: 14px; }
+.cfl { font-size: 13px; font-weight: 700; color: var(--td); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; background: var(--bg); border: 1px solid var(--line); border-radius: 100px; padding: 8px 16px; transition: all .25s; }
+.cfl:hover { border-color: var(--taupe); background: var(--taupe); color: #fff; gap: 9px; }
+.cimg-wrap { border-radius: 14px; overflow: hidden; border: 2px solid var(--line); box-shadow: 0 8px 32px rgba(44,42,37,.1); transition: all .3s; }
+.cimg-wrap:hover { transform: scale(1.02); box-shadow: 0 14px 48px rgba(44,42,37,.16); border-color: var(--taupe); }
+.cimg-wrap img { width: 100%; height: auto; display: block; }
+
+@media(max-width:900px) { .ctop { grid-template-columns: 1fr 1fr; } .cfeat { grid-template-columns: 1fr; gap: 1.5rem; } }
+@media(max-width:480px) { .ctop { grid-template-columns: 1fr; } }
